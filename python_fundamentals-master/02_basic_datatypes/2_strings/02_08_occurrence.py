@@ -7,3 +7,6 @@ Letter input: o
 Result: 4
 
 '''
+sentence = input("Enter a sentence: ")
+letter = input("input a letter ton find the occurences of a specifc letter in the string: ")
+print(sentence.count(letter))
