@@ -7,3 +7,13 @@ The output of your calculation should therefore look like this:
 
 The sum is: 5050
 '''
+start = int(input("Enter starting value: "))
+end = int(input("Enter ending value(NOT INCLUDING) : "))
+z = 0
+l = start
+k = 0
+
+for h in range(start, end):
+    if h != start:
+        l += h
+print(l)

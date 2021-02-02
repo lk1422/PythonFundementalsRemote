@@ -7,3 +7,24 @@ Example input:  1,2,3,4,5,6,7,8,9,10
 Example output: 2,4,6,8,10,9,7,5,3,1
 
 '''
+
+z = 10
+num = []
+k = 1
+oddlist = []
+evenlist = []
+while z > 0:
+    num.append(int(input("Enter a number: ")))
+    z -= 1
+
+
+x = 0
+while x != 10:
+    evenlist.append(num[x])
+    x += 2
+
+while k <= 9:
+    oddlist.append(num[k])
+    k += 2
+evenlist.sort(reverse=True)
+print(oddlist + evenlist)

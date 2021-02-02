@@ -17,3 +17,8 @@ Another example: if input is 3, you will output
 Hint: Think of nested for loops
 
 '''
+height = int(input("How tall would you like the tower to be: "))
+z = 0
+while z <= height:
+    print("*" * z)
+    z += 1

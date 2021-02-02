@@ -9,3 +9,21 @@ that we haven't looked at yet. See if you can figure it out, otherwise
 come back to this task after you have learned about loops)
 
 '''
+i = 10
+num = []
+h = 0
+j = 1
+while i > 0:
+    num.append(int(input("Enter a number: ")))
+    i -= 1
+for z in num:
+    j *= z
+    if z > h:
+        h = z
+print("The Largest Number Was " + str(h))
+print("The product of all the numbers is: " + str(j))
+'''
+num.sort()
+print(num[-1])
+I realized i could do this after same result though i tested it........
+'''
