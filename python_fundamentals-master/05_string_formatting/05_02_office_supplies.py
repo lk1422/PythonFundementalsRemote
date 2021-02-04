@@ -6,8 +6,8 @@ formatted like so:
 LASTNAME, Name           Office supply item
 LONGERLASTNAME, Name     Office supply item
 
-'''
 
+'''
 office = [
     {"full_name": "Michael Scott", "item": "world's best boss mug"},
     {"full_name": "Dwight Schrute", "item": "pepper spray"},
@@ -25,3 +25,21 @@ office = [
     {"full_name": "Creed Bratton", "item": "mung beans"},
     {"full_name": "Darryl Philbin", "item": "forklift"},
 ]
+for y in office:
+    x = y["full_name"]
+    words = x.split()
+    words = reversed(words)
+    words = " ".join(words)
+    z = y["item"]
+    j = 2
+    if len(words) != 15:
+        extraspace  = 15 - len(words)
+        j += extraspace
+    z = z.split()
+    z.insert(0 , " "*j)
+    z = " ".join(z)
+
+
+    print(f"{words} {z}")
+
+##I TRIED USING ^^ ABOVE {z:>j} but it wouldnt work :( sowwy hope this is fine instead
