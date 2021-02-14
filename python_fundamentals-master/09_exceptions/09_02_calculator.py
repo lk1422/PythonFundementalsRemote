@@ -8,3 +8,20 @@ the script should handle:
 Test it and make sure it does not crash when you enter incorrect values.
 
 '''
+while True:
+	dividend = (input("Enter a dividend: "))
+	divisor = (input("Enter a divisor: "))
+	try:
+		int(dividend) and int(divisor)
+	except ValueError:
+		print("enter a valid number")
+	else:
+		divisor = int(divisor)
+		dividend = int(dividend)
+
+	try:
+		print(dividend/divisor)
+	except ZeroDivisionError:
+		print("Cannot divide by 0")
+	except TypeError:
+		pass
