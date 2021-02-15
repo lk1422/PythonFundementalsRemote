@@ -7,5 +7,5 @@ and play around a little.
 
 import matplotlib.pyplot as plt
 plt.plot([1, 2, 3, 4])
-lt.ylabel('numbers')
+plt.ylabel('numbers')
 plt.show()
