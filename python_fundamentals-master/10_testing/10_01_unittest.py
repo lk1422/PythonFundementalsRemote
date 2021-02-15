@@ -10,3 +10,14 @@ into different files. Note that you will run into an error when attempting to im
 because Python modules can't begin with a number.
 
 '''
+import unittest
+def divide(x,y):
+	return x/y
+class TestClass(unittest.TestCase):
+	def test_division(self):
+		self.assertNotEqual(divide(3,3), 1)
+	def test_raisesError(self):
+		with self.assertRaises(ZeroDivisionError):
+			divide(3,0)
+if __name__== '__main__':
+	unittest.main()
