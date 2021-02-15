@@ -4,3 +4,8 @@ Adapt your Generator expression from the previous Exercise
 What numbers do you get?
 
 '''
+import math
+num_list = [i for i in range(1000)]
+gen = (i for i in num_list if i % 111 == 0 )
+for h in gen:
+	print(math.floor(h/1111))
